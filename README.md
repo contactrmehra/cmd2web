@@ -59,12 +59,13 @@ To create index file(.tbi) using  tabix use the following command:
 tabix -p bed sortedrmsk.bed.gz -s6 -b7 -e8
 ```
 Parameters in the command: 
+```
 -p bed - Tells about the type of input file
 Sortedrmsk.bed.gz - Input file
 -s6 - Tells about the column of the sequence (In this case 6th column)
 -b7 - Tells about the column having starting position of sequence ( In this case 7th column)
 -e8 - Tells about the column having ending position of sequence ( In this case 8th column)
-
+```
 To test from terminal, use the following command:
 ```
 tabix sortedextrarmsk.bed.gz -s6 -b7 -e8 chr1:10000-20000
